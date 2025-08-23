@@ -84,10 +84,9 @@
                   >Acceuil</a
                 >
               </li>
-              <li><a href="blog-grid.html" class="xl">À propos</a></li>
-              <li><a href="blog-grid.html" class="xl">Compétences</a></li>
-              <li><a href="blog-grid.html" class="xl">Projets</a></li>
-              <li><a href="index.html#support" class="xl"></a></li>
+              <li><a href="#apropos" class="xl">À propos</a></li>
+              <li><a href="#competences" class="xl">Compétences</a></li>
+              <li><a href="#projet" class="xl">Projets</a></li>
             </ul>
           </nav>
 
@@ -139,7 +138,7 @@
 
     <main>
       <!-- ===== Hero Start ===== -->
-      <section class="gj do ir hj sp jr i pg">
+      <section class="gj do ir hj sp i pg">
         <!-- Hero Images -->
         <div class="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
           <img
@@ -164,9 +163,6 @@
               margin-right: 100px;
             "
           />
-
-          <!-- <img class="om" src="./images/logo_light.jpg" alt="Logo Light" style="width: 50px; height: auto;" />
-        <img class="xc nm" src="./images/logo_dark.jpg" alt="Logo Dark" style="width: 50px; height: auto;" /> -->
         </div>
 
         <!-- Hero Content -->
@@ -192,7 +188,7 @@
       <!-- ===== Hero End ===== -->
 
       <!-- ===== About Start ===== -->
-        <section class="">
+        <section class="i pg ji" id="apropos">
         <!-- Section Title Start -->
         <div
           x-data="{ sectionTitle: `À propos de moi`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
@@ -245,7 +241,7 @@
       <!-- ===== About End ===== -->
 
       <!-- ===== Small Features Start ===== -->
-      <div x-data="{ sectionTitle: `Compétences techniques`}">
+      <div x-data="{ sectionTitle: `Compétences techniques`}" id="competences" class="">
         <div class="animate_top bb ze rj ki xn vq">
           <h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b"></h2>
         </div>
@@ -363,7 +359,7 @@
       <!-- ===== Small Features End ===== -->
 
       <!-- ===== Team Start ===== -->
-      <section class="i pg ji gp uq">
+      <section class="i pg ji gp uq" id="projet">
         <!-- Bg Shapes -->
         <span class="rc h s r vd fd/5 fh rm"></span>
         <img src="images/shape-08.svg" alt="Shape Bg" class="h q r" />
