@@ -9,6 +9,7 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body
+    id="home"
     x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
          darkMode = JSON.parse(localStorage.getItem('darkMode'));
@@ -78,7 +79,7 @@
             <ul class="tc _o sf yo cg ep">
               <li>
                 <a
-                  href="index.html"
+                  href="#home"
                   class="xl"
                   :class="{ 'mk': page === 'home' }"
                   >Acceuil</a
@@ -365,14 +366,13 @@
 
         <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `Mes projets et réalisations`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}"
+          x-data="{ sectionTitle: `Mes projets et réalisations`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
             <h2
               x-text="sectionTitle"
               class="fk vj pr kk wm on/5 gq/2 bb _b"
             ></h2>
-            <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
           </div>
         </div>
         <!-- Section Title End -->
@@ -384,11 +384,13 @@
               <div class="c i pg z-1">
                 <img class="vd" src="images/gestion_prêt.png" alt="Team" />
                 <h4 class="yj go kk wm ob zb" style="font-weight: bold;">Page admin gestion association</h4>
-                <p>L'application permet de gérer les prêts des utilisateurs. Voir les listes, supprimer, modifier et visualiser par un diagramme les montants</p>
+                <p>Gestion des associations et des membres, validation d'une demande d'adhésion par un nouveau utilisateur</p>
                 <p>
                   <b class="ek zj kk wm nb _b" style="text-decoration: underline;">Téchnologies: </b><br>
                   <span class="sc ek uj lk nh rg zi _i" style="font-size: medium; background-color: rgb(107, 107, 224);">Angular</span>
+                  <span class="sc ek uj lk nh rg zi _i" style="font-size: medium; background-color: rgb(107, 107, 224);">PrimeNG</span>
                   <span class="sc ek uj lk nh rg zi _i" style="font-size: medium; background-color: rgb(107, 107, 224);">Laravel</span>
+                  <span class="sc ek uj lk nh rg zi _i" style="font-size: medium; background-color: rgb(107, 107, 224);">JWT</span>
                   <span class="sc ek uj lk nh rg zi _i" style="font-size: medium; background-color: rgb(107, 107, 224);">MySql</span>
                 </p>
                 <ul class="tc wf cg">
@@ -411,11 +413,12 @@
               <div class="c i pg z-1">
                 <img class="vd" src="images/gestion_prêt.png" alt="Team" />
                 <h4 class="yj go kk wm ob zb" style="font-weight: bold;">Page utilisateur gestion association</h4>
-                <p>L'application permet de gérer les prêts des utilisateurs. Voir les listes, supprimer, modifier et visualiser par un diagramme les montants</p>
+                <p>Un petit réseau social permetant à l'utilisateur de lister et créer des nouvelles publications, consultation et modification des informations parsonnelles</p>
                 <p>
                   <b class="ek zj kk wm nb _b" style="text-decoration: underline;">Téchnologies: </b><br>
                   <span class="sc ek uj lk nh rg zi _i" style="font-size: medium; background-color: rgb(107, 107, 224);">Angular</span>
                   <span class="sc ek uj lk nh rg zi _i" style="font-size: medium; background-color: rgb(107, 107, 224);">Laravel</span>
+                  <span class="sc ek uj lk nh rg zi _i" style="font-size: medium; background-color: rgb(107, 107, 224);">JWT</span>
                   <span class="sc ek uj lk nh rg zi _i" style="font-size: medium; background-color: rgb(107, 107, 224);">MySql</span>
                 </p>
                 <ul class="tc wf cg">
